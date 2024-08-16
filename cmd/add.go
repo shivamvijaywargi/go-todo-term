@@ -4,8 +4,7 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
-
+	"github.com/shivamvijaywargi/go-todo-term/todos"
 	"github.com/spf13/cobra"
 )
 
@@ -15,7 +14,7 @@ var addCmd = &cobra.Command{
 	Short: "Add a new todo list item",
 	Long:  `This commands lets you add a item to your todo list from the comand line`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("add called")
+		todos.Add()
 	},
 }
 
